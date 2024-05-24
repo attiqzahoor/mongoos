@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Inscription</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@mempool/mempool.js"></script> 
+</head>
+<body>
+
+    <div id="wallet">
+        <button id="connectWalletBtn">Connect UniSat Wallet</button>
+        <p>Wallet Address: <span id="walletAddress">Not connected</span></p>
+        <p>Wallet Balance: <span id="walletBalance">0</span> sats</p>
+    </div>
+    
+    <div>
+        <input type="text" id="inscriptionId" placeholder="Enter Inscription ID">
+        <button id="searchButton">Search</button>
+    </div>
+
+    <div id="inscriptionData" style="display: none;">
+        <p>Inscription ID: <span id="inscriptionIdDisplay"></span></p>
+        <p>Height: <span id="heightDisplay"></span></p>
+        <p>Content Type: <span id="contentTypeDisplay"></span></p>
+        <p>Inscription Number: <span id="inscriptionNumberDisplay"></span></p>
+        <p>Address: <span id="addressDisplay"></span></p>
+        <p>Total Bytes: <span id="totalBytesDisplay"></span></p>
+        <p id="estimatedFeeDisplay">Estimated Fee: N/A</p>
+    </div>
+    
+    <div>
+        <form id="feeRateForm"></form>
+    </div>
+    
+    <button id="publishButton" disabled>Publish</button>
+    
+    <div id="popup" style="display:none;">
+        Please install UniSat Wallet.
+    </div>
+    
+    <div id="sellPage" style="display: none;">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p>Sell Page Content Here</p>
+        </div>
+    </div>
+    
+    <button id="sellButton">Sell</button>
+
+
+
+    <button id="buyButton">Buy</button>
+<div id="documentsContainer"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
